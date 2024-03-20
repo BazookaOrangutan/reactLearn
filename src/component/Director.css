@@ -1,0 +1,45 @@
+body{
+    background: #3b3a3a;
+    color: white;
+}
+
+.director{
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+form{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    /* margin: 10px auto; */
+    /* background: rgba(71, 115, 134, 0.384); */
+    /* padding: 10%; */
+    gap: 20px;
+}
+/* [type="submit"]{
+    background: rgb(81, 131, 145);
+    border: none;
+} */
+input{
+    height: 30px;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.section-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background: #0000001e;
+    border-radius: 8px;
+}
