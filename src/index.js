@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ListDirectors from './component/Director';
+import ListDirectors from './component/ListDirectors';
 import Count from './component/Count';
 
 
