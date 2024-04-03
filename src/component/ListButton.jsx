@@ -6,15 +6,15 @@ export default function ListButton() {
     const { deleteAll, ascId, revAscId, sortByName, sortBySurname } = useContext(Context);
     return (
         <>
-            <button onClick={ascId} className='btn btn-info'><i class="bi bi-arrow-up"></i> Id</button>
+            {/* <button onClick={ascId} className='btn btn-info'><i class="bi bi-arrow-up"></i> Id</button>
             <button onClick={revAscId} className='btn btn-info'><i class="bi bi-arrow-down"></i> Id</button>
             <button onClick={deleteAll} className='btn btn-danger'>Удалить всё</button>
             <button onClick={sortByName} className='btn btn-info'><i class="bi bi-arrow-up"></i> Name</button>
-            <button onClick={sortBySurname} className='btn btn-info'><i class="bi bi-arrow-up"></i> Surname</button>
-            {/* <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button>
-            <Button></Button> */}
+            <button onClick={sortBySurname} className='btn btn-info'><i class="bi bi-arrow-up"></i> Surname</button> */}
+            <Button action={ascId} className={'btn btn-info'} icon={'bi bi-arrow-up'} caption={'Id'}/>
+            <Button action={revAscId} className={'btn btn-info'} icon='bi bi-arrow-down'caption='Id'/>
+            <Button action={deleteAll} className={'btn btn-danger'} caption='Удалить всё'/>
+            <Button action={sortByName} className={'btn btn-info'} icon='bi bi-arrow-up'caption='Name'/>
+            <Button action={sortBySurname} className={'btn btn-info'} icon='bi bi-arrow-up'caption='Surname'/>
         </>)
 }
