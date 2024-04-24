@@ -113,3 +113,7 @@ const film = [{
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzMTg4MDI0Ml5BMl5BanBnXkFtZTgwOTY0MzQ4MDE@._V1_SY1000_CR0,0,1553,1000_AL_.jpg"
     ]
 }]
+
+export default function films(){
+    return film;
+}

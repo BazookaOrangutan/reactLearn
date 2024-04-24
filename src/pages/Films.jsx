@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route, Outlet, useParams } from "react-router-dom";
 import Nav from "../component/Nav";
+import films from "../films";
+
+let filmAll = films();
 
 let pathes = [
     {
@@ -18,10 +21,16 @@ let pathes = [
 
 
 function Film(){
-    const {title} = useParams();
+    let {title} = useParams();
+    title = title.replace(/^\w/,  letter=>letter.toUpperCase()).replace(/_/g, under => ' ');
+    let filmView = filmAll.find((film) => film.Title === title);
     return(
         <>
             <h3>{title}</h3>
+            <img src={filmView.Poster}></img>
+            <p>{filmView.Year}</p>
+            <p>{filmView.Director}</p>
+            <p>{filmView.Plot}</p>
         </>
     )
 }
